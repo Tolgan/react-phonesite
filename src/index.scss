@@ -1,0 +1,25 @@
+body {  font-family: 'Federo', sans-serif;
+ background:rgb(239, 239, 240);
+  margin: 0;
+  padding: 0;
+  .btn-black{border:0.1rem solid darkslategray;cursor:pointer}
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-trash{cursor:pointer; }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.clear{border:1px solid rgb(202, 101, 101); &:hover{background:rgb(128, 128, 158) ;border:none } }
+.img-container{position:relative  ; }
+.picture-attachment{cursor:pointer; position:absolute ;right:0%;bottom:0%;opacity:0; color:white;  
+padding: 0.2rem;padding-right:0.4rem; background:darkblue;
+     }
+.img-container:hover{.picture-attachment{transition:all 3s linear  ;opacity:1};
+.card-img-top{transform:scale(1.3)}  ;}
+.card{border-color:transparent ;&:hover{border:0.02rem solid lightblue ;box-shadow:2px 2px 5px 0px }  ;} 
+
+.card-footer{border-top:transparent;background:rgb(255, 255, 255)}
+.border-primary{border-radius:5px   }
