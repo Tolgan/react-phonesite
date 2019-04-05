@@ -6,15 +6,15 @@ import {storeProducts,detailProduct} from "../data"
 
        class ProductProvider extends Component {
 
-state={products:[],deneme2:"anan" ,detailProduct:detailProduct,cart:[],carttotal:[]
-,modalopen:false   }
+state={products:[] ,detailProduct:detailProduct,cart:[],
+modalopen:false   }
 
 componentDidMount(){   this.getDestruction() ;    }
 
 getDestruction=()=>{  
 let tempProducts=[];
 storeProducts.forEach(item=> {const products={...item} ; tempProducts=[...tempProducts,products] 
-  ;console.log(tempProducts) }  )
+  }  )
 
 this.setState(()=>{return{products:tempProducts }} )
 }
@@ -56,7 +56,7 @@ const specify=products[naber]
   specify.total=specify.price*specify.count    
    const bum=specify.price
      
-  this.setState({cartvalue:[],carttotal:this.state.carttotal+bum})
+  this.setState({carttotal:this.state.carttotal+bum})
   console.log(this.state)           }
 
   decrease=(id)=>{ const something=this.state.products.find(item=>item.id===id) 
